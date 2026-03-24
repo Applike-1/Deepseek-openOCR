@@ -1,4 +1,4 @@
-# 🚀 OpenOCR-Engine
+# 🚀 Deepseek-openOCR
 
 > Engineering Deployment Adapter for DeepSeek-OCR-2
 > Run CUDA-Oriented Research Models on CPU / MPS / GPU — Safely & Reproducibly
@@ -12,7 +12,7 @@
 
 ## 📖 Overview
 
-**OpenOCR-Engine** is an engineering-grade deployment adapter built around the DeepSeek-OCR-2 research model.
+**Deepseek-openOCR** is an engineering-grade deployment adapter built around the DeepSeek-OCR-2 research model.
 
 This project does NOT modify the original model architecture or training logic.
 Instead, it provides a runtime compatibility and deployment layer that enables stable cross-device execution and production-style integration.
@@ -24,7 +24,7 @@ Many research models are:
 * Research-environment oriented
 * Not production-hardened
 
-OpenOCR-Engine demonstrates how to productionize such models responsibly and non-invasively.
+Deepseek-openOCR demonstrates how to productionize such models responsibly and non-invasively.
 
 ---
 
@@ -66,7 +66,7 @@ Most open-source AI models:
 * Lack reproducible environments
 * Provide unstable inference interfaces
 
-OpenOCR-Engine demonstrates:
+Deepseek-openOCR demonstrates:
 
 * Non-invasive engineering adaptation
 * Runtime compatibility techniques
@@ -146,7 +146,7 @@ Hardware (CUDA / MPS / CPU)
 
 ## 📊 Original vs Engineered Deployment Layer
 
-| Feature             | Research Version | OpenOCR-Engine        |
+| Feature             | Research Version | Deepseek-openOCR        |
 | ------------------- | ---------------- | --------------------- |
 | Device Support      | CUDA-oriented    | CUDA / MPS / CPU      |
 | Inference Interface | Research-style   | Standardized          |
@@ -172,15 +172,15 @@ Hardware (CUDA / MPS / CPU)
 ## 📂 Project Structure
 
 ```
-openocr-engine/
+Deepseek-openOCR/
 ├── app_simple.py
-├── model_adapter.py
-├── config.py
+├── model_wrapper.py
+├── config_ocr.py
 ├── hybrid_ocr_engine.py
 ├── app_api.py
 ├── templates/
 ├── uploads/
-└── outputs/
+└── output_results/
 ```
 
 ---
@@ -224,7 +224,7 @@ Into structured Markdown output.
 
 ## ⚖ Important Legal Notice
 
-OpenOCR-Engine is an independent engineering project.
+Deepseek-openOCR is an independent engineering project.
 
 This repository does NOT:
 
@@ -245,7 +245,7 @@ This repository provides a runtime engineering wrapper and deployment framework 
 
 ## 📜 License
 
-This repository (OpenOCR-Engine) is released under the MIT License.
+This repository (Deepseek-openOCR) is released under the MIT License.
 
 However:
 
@@ -268,18 +268,11 @@ If you find this project useful, consider starring ⭐ the repository.
 
 ---
 
-你说得对 👍
-上面中文版确实是“精简版”，不是完整对照翻译。
-
-下面给你一份 **完整中文对照版（逐段完整翻译）**，结构和英文完全一致，你可以直接放在 README 末尾作为“完整中文版”。
-
----
-
 # 🇨🇳 中文完整版
 
 ---
 
-# 🚀 OpenOCR-Engine
+# 🚀 Deepseek-openOCR
 
 > 面向 DeepSeek-OCR-2 的工程级部署适配层
 > 让 CUDA 导向的研究模型安全、稳定地运行在 CPU / MPS / GPU 上
@@ -288,7 +281,7 @@ If you find this project useful, consider starring ⭐ the repository.
 
 ## 📖 项目概述
 
-**OpenOCR-Engine** 是一个围绕 DeepSeek-OCR-2 构建的工程级部署适配层。
+**Deepseek-openOCR** 是一个围绕 DeepSeek-OCR-2 构建的工程级部署适配层。
 
 本项目**不会修改原始模型结构或训练逻辑**。
 它通过构建运行时兼容层与部署适配层，实现跨设备稳定运行与生产级系统集成。
@@ -300,7 +293,7 @@ If you find this project useful, consider starring ⭐ the repository.
 * 面向实验环境设计
 * 不具备生产级稳定性
 
-OpenOCR-Engine 展示了如何在**不侵入原始源码的前提下**，对研究模型进行工程化部署。
+Deepseek-openOCR 展示了如何在**不侵入原始源码的前提下**，对研究模型进行工程化部署。
 
 ---
 
@@ -342,7 +335,7 @@ DeepSeek-OCR-2 的全部知识产权归原 DeepSeek 团队所有。
 * 缺乏可复现环境
 * 推理接口不稳定
 
-OpenOCR-Engine 展示了：
+Deepseek-openOCR 展示了：
 
 * 非侵入式工程改造方法
 * 运行时兼容技术
@@ -426,7 +419,7 @@ DeepSeek-OCR-2
 
 ## 📊 原始版本 vs 工程部署层
 
-| 功能项      | 研究版本   | OpenOCR-Engine   |
+| 功能项      | 研究版本   | Deepseek-openOCR   |
 | -------- | ------ | ---------------- |
 | 设备支持     | CUDA导向 | CUDA / MPS / CPU |
 | 推理接口     | 研究风格   | 标准化接口            |
@@ -452,15 +445,15 @@ DeepSeek-OCR-2
 ## 📂 项目结构
 
 ```
-openocr-engine/
+Deepseek-openOCR/
 ├── app_simple.py
-├── model_adapter.py
-├── config.py
+├── model_wrapper.py
+├── config_ocr.py
 ├── hybrid_ocr_engine.py
 ├── app_api.py
 ├── templates/
 ├── uploads/
-└── outputs/
+└── output_results/
 ```
 
 ---
@@ -504,7 +497,7 @@ http://localhost:5003
 
 ## ⚖ 重要法律声明
 
-OpenOCR-Engine 是一个独立的工程项目。
+Deepseek-openOCR 是一个独立的工程项目。
 
 本仓库：
 
@@ -525,7 +518,7 @@ OpenOCR-Engine 是一个独立的工程项目。
 
 ## 📜 License 说明
 
-本仓库（OpenOCR-Engine）采用 MIT License 发布。
+本仓库（Deepseek-openOCR）采用 MIT License 发布。
 
 但需注意：
 
@@ -548,8 +541,6 @@ DeepSeek-OCR-2 的模型代码与权重受其原始 License 约束。
 
 ---
 
-
 # ✅ 截图展示区
 <img width="1763" height="881" alt="image" src="https://github.com/user-attachments/assets/cbce282c-f89e-451e-a850-c08161a3883a" />
-
 
